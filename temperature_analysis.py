@@ -32,13 +32,13 @@ print("\n===== Task 3: Alert System =====")
 temperatures = [28, 32, 35, 40, 31, 33, 30]
 
 hot_days = 0
-date = 0
-for index, temp in enumerate(temperatures,start=1):
+days = 0
+for day, temp in enumerate(temperatures,start=1):
     if(temp == 40):
-        date = index
+        days = day
         break
     elif(temp > 30):
         hot_days +=1
 
 print(f"Hot Days before alert: {hot_days}")
-print(f"Alert! Extreme temperature 40°C detected on Day {date}")
+print(f"Alert! Extreme temperature 40°C detected on Day {days}")
